@@ -20,7 +20,8 @@ function App() {
   const getRecipes = async () => {
     const response = await fetch(example_req2);
     const data = await response.json();
-    setRecipes(data.hits);
+    setRecipes([]);
+    setRecipes(data.hits)
     console.log(data.hits);
   };
 
