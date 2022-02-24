@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 
 function App() {
-  const APP_ID = process.env.REACT_APP_APP_ID;
-  const APP_KEY = process.env.REACT_APP_APP_KEY;
+  const APP_ID = "8f4b7e60";//process.env.REACT_APP_APP_ID;
+  const APP_KEY = "1e75978c5c2123c04b25acb2c7a662ec";//process.env.REACT_APP_APP_KEY;
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("chicken");
