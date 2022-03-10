@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
@@ -9,8 +9,8 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("chicken");
-  const example_req = `https://api.edamam.com/search?&q=${query}`;
-  const example_req1 = `https://api.edamam.com/search?&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
+  // const example_req = `https://api.edamam.com/search?&q=${query}`;
+  // const example_req1 = `https://api.edamam.com/search?&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
   const example_req2 = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   useEffect(() => {
